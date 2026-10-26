@@ -32,6 +32,7 @@ await page.locator('#reset').click();
 await page.screenshot({path:path.join(root,'.cache','gallery-desktop.png'),fullPage:false});
 await page.locator('[data-view="templates"]').click();
 assert(await page.locator('.template-item').count()===10,'template count');
+await page.locator('.template-item img').evaluateAll(images=>Promise.all(images.map(i=>{i.loading='eager';return i.decode();})));
 await page.screenshot({path:path.join(root,'.cache','templates-desktop.png'),fullPage:false});
 await page.locator('[data-view="workbench"]').click();
 await page.locator('[name="agent"]').fill('测试管理者');

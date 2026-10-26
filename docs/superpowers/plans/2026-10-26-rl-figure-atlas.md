@@ -45,4 +45,6 @@
 - [x] Implement gallery and metadata detail view with attribution.
 - [x] Validate JSON references, image decoding, license presence, relative links and JS syntax.
 - [x] Inspect desktop and mobile rendering and exercise filters.
-- [ ] Initialize Git, publish if an authenticated GitHub account is available; record exact outcome.
+- [x] Initialize Git, publish if an authenticated GitHub account is available; record exact outcome.
+
+Published to https://github.com/peter-kinger/rl-figure-atlas ; GitHub Pages deployment run 40335976152 completed successfully. Browser checks passed for search, categories, shortlist export, SVG download, POMDP text, document links and mobile width. Structural checks passed for 315 relative links, all original image hashes and all SVG documents.
