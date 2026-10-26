@@ -1,0 +1,26 @@
+{
+  "paper_id": "network",
+  "source_url": "https://www.nature.com/articles/s42256-024-00879-7",
+  "retrieved_at": "2026-10-26",
+  "source_sha256": "46f9e40e5357a3b696ac642657a8a97752e4994d2a7428c161a88c5f3c7e29c2",
+  "license": "CC BY-NC-ND 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+  "license_evidence": "Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. ",
+  "figures": [
+    {
+      "id": "network-fig1",
+      "source_url": "https://www.nature.com/articles/s42256-024-00879-7/figures/1",
+      "credit_review": "图注中未发现单独排除条款；保留原图整张，不抽取面板。"
+    },
+    {
+      "id": "network-fig2",
+      "source_url": "https://www.nature.com/articles/s42256-024-00879-7/figures/2",
+      "credit_review": "图注中未发现单独排除条款；保留原图整张，不抽取面板。"
+    },
+    {
+      "id": "network-fig3",
+      "source_url": "https://www.nature.com/articles/s42256-024-00879-7/figures/3",
+      "credit_review": "图注中未发现单独排除条款；保留原图整张，不抽取面板。"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "paper_id": "dqn",
+  "source_url": "https://www.nature.com/articles/nature14236",
+  "retrieved_at": "2026-10-26",
+  "source_sha256": "de18a764f1a13793c3d35f1d522a5aea592169735fdc94e748e0276e6559933a",
+  "license": "需另行授权",
+  "license_url": "",
+  "license_evidence": " Reprints and permissions About this article Cite this article Mnih, V., Kavukcuoglu, K., Silver, D. et al. Human-level control through deep reinforcement learning. Nature 518 , 529–533 (2015). https://doi.org/10.1038/nature14236 Download citation Received : 10 July 2014 Accepted : 16 January 2015 Published : 25 February 2015 Issue date : 26 February 2015 DOI : https://doi.org/10.1038/nature14236 Share this article Anyone you share the following link with will be able to read this content: Get shareable link Sorry, a shareable link is not currently available for this article. Copy shareable link to clipboard Provided by the Springer Nature SharedIt content-sharing initiative Comments Comment",
+  "figures": [
+    {
+      "id": "dqn-fig1",
+      "source_url": "https://www.nature.com/articles/nature14236",
+      "credit_review": "图注中未发现单独排除条款；保留原图整张，不抽取面板。"
+    },
+    {
+      "id": "dqn-fig2",
+      "source_url": "https://www.nature.com/articles/nature14236",
+      "credit_review": "图注中未发现单独排除条款；保留原图整张，不抽取面板。"
+    }
+  ]
+}

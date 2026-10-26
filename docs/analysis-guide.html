@@ -1,0 +1,107 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>强化学习论文常见分析图 · RL Figure Atlas</title><link rel="stylesheet" href="../assets/style.css"><style>.reading{max-width:1000px;padding:45px 5%;margin:auto}.reading h1{font:34px/1.5 var(--serif);margin:30px 0}.reading h2{font-size:22px;font-weight:500;margin:44px 0 17px}.reading p{line-height:1.95;margin:18px 0}.reading table{border-collapse:collapse;display:block;overflow:auto;font-size:12px;line-height:1.8}.reading td,.reading th{border:1px solid var(--line);padding:12px 15px;text-align:left;min-width:110px}.reading th{background:#e8eddf}.reading img{max-width:100%;height:auto;background:white}.reading>p:first-child{font-size:12px}.reading code{background:#e8eddf;padding:2px 5px}.reading li{margin:10px 0}.reading pre code{background:none;padding:0}</style></head><body><article class="reading"><p><a href="../index.html">← 返回图示参考库</a></p><h1>强化学习论文常见分析图</h1>
+<p>先写科学问题，再选图形。下表中的建议是本库的分析设计，不代表所列论文都使用了这些统计方法。</p>
+<table>
+<thead>
+<tr>
+<th>科学问题</th>
+<th>建议图形与数据</th>
+<th>可借鉴的图</th>
+<th>必须避免</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>是否学会、用了多少交互</td>
+<td>学习曲线：环境交互步数 × 留出评估表现；独立随机种子</td>
+<td><a href="../papers/navigation.html">流场 Fig. 2</a>、<a href="../papers/economist.html">AI Economist Fig. 2</a></td>
+<td>只报训练奖励；把时间步当独立样本</td>
+</tr>
+<tr>
+<td>与传统方法相比好多少</td>
+<td>配对任务指标、分布图和效应量；共同测试事件</td>
+<td><a href="../papers/biodiversity.html">CAPTAIN Fig. 5</a>、<a href="../papers/dreamer.html">Dreamer Fig. 4</a></td>
+<td>只有 RL 算法互比，缺少规则、MPC 或优化基线</td>
+</tr>
+<tr>
+<td>实际物理目标是否改善</td>
+<td>物理单位的结果曲线 / 误差分布</td>
+<td><a href="../papers/tokamak.html">托卡马克 Fig. 2</a>、<a href="../papers/water.html">调水 Fig. 6</a></td>
+<td>总奖励变化替代水质、能耗等实际指标</td>
+</tr>
+<tr>
+<td>策略在何时做了什么</td>
+<td>共用时间轴的驱动、动作、状态和目标响应</td>
+<td><a href="../papers/cold-atoms.html">冷原子 Fig. 2</a>、<a href="../papers/drone.html">无人机 Fig. 4</a></td>
+<td>将所有变量叠在一个多重坐标轴上</td>
+</tr>
+<tr>
+<td>策略的空间规律是什么</td>
+<td>同尺度轨迹、动作场、空间优先级地图</td>
+<td><a href="../papers/navigation.html">流场 Fig. 3、5</a>、<a href="../papers/biodiversity.html">CAPTAIN Fig. 6</a></td>
+<td>截取最成功个例、不显示失败</td>
+</tr>
+<tr>
+<td>输入怎样关联到动作</td>
+<td>条件动作图、SHAP、局部敏感性；固定解释对象</td>
+<td><a href="../papers/water.html">调水 Fig. 7</a></td>
+<td>将 SHAP 直接解释为物理因果贡献</td>
+</tr>
+<tr>
+<td>哪个模块有效</td>
+<td>移除单一机制的性能对比；一致计算预算</td>
+<td><a href="../papers/dreamer.html">Dreamer Fig. 6</a></td>
+<td>同时改变多个模块却归因于一个模块</td>
+</tr>
+<tr>
+<td>对参数是否敏感</td>
+<td>关键权重 / 控制间隔的曲线或热图</td>
+<td><a href="../papers/water.html">调水 Fig. 8</a>、<a href="../papers/tearing.html">撕裂控制 Fig. 4</a></td>
+<td>只画最佳参数，隐去失败区间</td>
+</tr>
+<tr>
+<td>对缺测和观测噪声是否可靠</td>
+<td>观测质量 × 成功率 / 物理目标</td>
+<td><a href="../papers/biodiversity.html">CAPTAIN Fig. 2</a></td>
+<td>用训练时全部已见扰动宣称未知稳健性</td>
+</tr>
+<tr>
+<td>能否迁移到新场景</td>
+<td>训练场景 × 测试场景矩阵，零样本和微调分开</td>
+<td><a href="../papers/navigation.html">流场 Fig. 7</a>、<a href="../papers/urban.html">城市规划 Fig. 2</a></td>
+<td>将重新训练后的表现称为直接泛化</td>
+</tr>
+<tr>
+<td>极端情形是否安全</td>
+<td>违例率、严重度、失败时间与尾部损失</td>
+<td><a href="../papers/tearing.html">撕裂控制 Fig. 2、4</a></td>
+<td>均值良好就宣称安全；漏掉失败终止</td>
+</tr>
+<tr>
+<td>多目标之间怎样交换</td>
+<td>非支配结果、目标散点与参考点；各目标有单位</td>
+<td><a href="../papers/biodiversity.html">CAPTAIN Fig. 3</a>、<a href="../papers/economist.html">AI Economist Fig. 3</a></td>
+<td>将不同权重的几个点称为完整 Pareto 前沿</td>
+</tr>
+<tr>
+<td>多主体如何协作或获益</td>
+<td>主体收益分布、资源流、局部与整体指标</td>
+<td><a href="../papers/economist.html">AI Economist Fig. 4、9</a>、<a href="../papers/network.html">网络控制 Fig. 1</a></td>
+<td>只有社会总量，掩盖个体损失</td>
+</tr>
+<tr>
+<td>性能代价能否接受</td>
+<td>交互样本、训练耗时、推理延迟、通信量与收益</td>
+<td><a href="../papers/alphatensor.html">AlphaTensor Fig. 5</a>、<a href="../papers/network.html">网络控制 Fig. 3</a></td>
+<td>仅用“更快”描述不同硬件与训练预算</td>
+</tr>
+</tbody></table>
+<h2>可执行的最小实验组合</h2>
+<p>对于地球系统中的序贯决策论文，先准备：一张决策框架图、一组留出评估的学习曲线、一组相同情景下的物理结果比较、一组策略行为解释，以及一组跨情景或扰动测试。存在安全条件或多个利益目标时，增加约束和权衡结果。</p>
+<p>每项比较至少记录：方法、训练种子、评估事件 / 年份 / 区域、是否在训练中出现、环境交互预算、物理目标、总回报、违例情况、计算开销。重复次数按实验变异与算力确定；不把任意固定次数宣称为充分统计保证。</p>
+<h2>数据表结构建议</h2>
+<p>训练数据可用 <code>method, seed, env_steps, eval_return, eval_physical_metric</code>。每个独立训练种子先在固定测试集上汇总，再跨种子计算区间。带相关性的事件或时间序列不能直接按每个时刻独立重采样。</p>
+<p>行为数据可用 <code>scenario, method, seed, episode, time, state_name, state_value, action_name, action_value, reward, constraint_cost</code>。多主体追加 <code>agent_id</code>；空间动作追加坐标与参考系统。</p>
+<p>明确误差带含义：标准差表示离散程度；标准误反映均值估计精度；置信区间依赖抽样假设和计算方法。保留未平滑结果，写出平滑窗口。不同回报尺度、不同训练预算或测试分布不应直接比较。</p>
+<h2>推荐的图序</h2>
+<p>Fig. 1 研究问题与 MDP → Fig. 2 主要效果 → Fig. 3 策略行为 → Fig. 4 稳健性 / 泛化 → Fig. 5 机制与权衡。若论文的关键贡献是安全或多主体治理，应把对应结果前移。</p>
+<p><a href="../templates/10-analysis-panel-layout.svg">四面板空白分析模板</a> 仅提供版式，不含示意实验曲线。</p>
+<footer><span>RL FIGURE ATLAS</span><a href="../RIGHTS.html">图片与原创内容许可</a></footer></article></body></html>

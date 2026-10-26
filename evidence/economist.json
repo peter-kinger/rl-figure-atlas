@@ -1,0 +1,41 @@
+{
+  "paper_id": "economist",
+  "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9067926/",
+  "retrieved_at": "2026-10-26",
+  "source_sha256": "95538292a774389dcb862d9b08a7b22691f7b96f3ef641700eb97dbe1eb66c2d",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_evidence": "ee American Association for the Advancement of Science. No claim to original U.S. Government Works. Distributed under a Creative Commons Attribution License 4.0 (CC BY). This is an open-access article distributed under the terms of the Creative Commons Attribution license , which permits unrestricted use, distribut",
+  "figures": [
+    {
+      "id": "economist-fig1",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9067926/figure/F1/",
+      "credit_review": "图注中未发现单独排除条款；保留原图整张，不抽取面板。"
+    },
+    {
+      "id": "economist-fig2",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9067926/figure/F2/",
+      "credit_review": "图注中未发现单独排除条款；保留原图整张，不抽取面板。"
+    },
+    {
+      "id": "economist-fig3",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9067926/figure/F3/",
+      "credit_review": "图注中未发现单独排除条款；保留原图整张，不抽取面板。"
+    },
+    {
+      "id": "economist-fig4",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9067926/figure/F4/",
+      "credit_review": "图注中未发现单独排除条款；保留原图整张，不抽取面板。"
+    },
+    {
+      "id": "economist-fig7",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9067926/figure/F7/",
+      "credit_review": "图注中未发现单独排除条款；保留原图整张，不抽取面板。"
+    },
+    {
+      "id": "economist-fig9",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9067926/figure/F9/",
+      "credit_review": "图注中未发现单独排除条款；保留原图整张，不抽取面板。"
+    }
+  ]
+}

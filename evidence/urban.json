@@ -1,0 +1,26 @@
+{
+  "paper_id": "urban",
+  "source_url": "https://www.nature.com/articles/s43588-023-00503-5",
+  "retrieved_at": "2026-10-26",
+  "source_sha256": "c0330e5f450e12ae200987bf319a2176dad9b0b5e3308561e42d4f13a6e6b56a",
+  "license": "需另行授权",
+  "license_url": "",
+  "license_evidence": " Springer Nature or its licensor (e.g. a society or other partner) holds exclusive rights to this article under a publishing agreement with the author(s) or other rightsholder(s); author self-archiving of the accepted manuscript version of this article is solely governed by the terms of such publishing agreement and applicable law. Reprints and permissions About this article Cite this article Zheng, Y., Lin, Y., Zhao, L. et al. Spatial planning of urban communities via deep reinforcement learning. Nat Comput Sci 3 , 748–762 (2023). https://doi.org/10.1038/s43588-023-00503-5 Download citation Received : 15 March 2023 Accepted : 27 July 2023 Published : 11 September 2023 Version of record : 11",
+  "figures": [
+    {
+      "id": "urban-fig1",
+      "source_url": "https://www.nature.com/articles/s43588-023-00503-5",
+      "credit_review": "图注中未发现单独排除条款；保留原图整张，不抽取面板。"
+    },
+    {
+      "id": "urban-fig2",
+      "source_url": "https://www.nature.com/articles/s43588-023-00503-5",
+      "credit_review": "图注中未发现单独排除条款；保留原图整张，不抽取面板。"
+    },
+    {
+      "id": "urban-fig4",
+      "source_url": "https://www.nature.com/articles/s43588-023-00503-5",
+      "credit_review": "图注中未发现单独排除条款；保留原图整张，不抽取面板。"
+    }
+  ]
+}

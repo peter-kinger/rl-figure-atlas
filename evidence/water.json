@@ -1,0 +1,36 @@
+{
+  "paper_id": "water",
+  "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10405199/",
+  "retrieved_at": "2026-10-26",
+  "source_sha256": "e893bf14102e990f39424151d93d6bfb31a08dbef9fec8d05752cff95d05b91b",
+  "license": "CC BY-NC-ND 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+  "license_evidence": "d 2023 Jul 5; Collection date 2024 Jan. © 2023 The Authors This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/). PMC Copyright notice PMCID: PMC10405199 PMID: 37554624 Abstract Water diversion is a common strategy to enhance water ",
+  "figures": [
+    {
+      "id": "water-fig1",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10405199/figure/fig1/",
+      "credit_review": "图注中未发现单独排除条款；保留原图整张，不抽取面板。"
+    },
+    {
+      "id": "water-fig6",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10405199/figure/fig6/",
+      "credit_review": "图注中未发现单独排除条款；保留原图整张，不抽取面板。"
+    },
+    {
+      "id": "water-fig7",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10405199/figure/fig7/",
+      "credit_review": "图注中未发现单独排除条款；保留原图整张，不抽取面板。"
+    },
+    {
+      "id": "water-fig8",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10405199/figure/fig8/",
+      "credit_review": "图注中未发现单独排除条款；保留原图整张，不抽取面板。"
+    },
+    {
+      "id": "water-fig9",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10405199/figure/fig9/",
+      "credit_review": "图注中未发现单独排除条款；保留原图整张，不抽取面板。"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "paper_id": "alphazero",
+  "source_url": "https://www.nature.com/articles/nature24270",
+  "retrieved_at": "2026-10-26",
+  "source_sha256": "2427974bbecba09e3b015799e02e0b841d9753e2f15d3938e6ec3cbfc8892cff",
+  "license": "需另行授权",
+  "license_url": "",
+  "license_evidence": " Reprints and permissions About this article Cite this article Silver, D., Schrittwieser, J., Simonyan, K. et al. Mastering the game of Go without human knowledge. Nature 550 , 354–359 (2017). https://doi.org/10.1038/nature24270 Download citation Received : 07 April 2017 Accepted : 13 September 2017 Published : 19 October 2017 Issue date : 19 October 2017 DOI : https://doi.org/10.1038/nature24270 Share this article Anyone you share the following link with will be able to read this content: Get shareable link Sorry, a shareable link is not currently available for this article. Copy shareable link to clipboard Provided by the Springer Nature SharedIt content-sharing initiative Access through y",
+  "figures": [
+    {
+      "id": "alphazero-fig1",
+      "source_url": "https://www.nature.com/articles/nature24270",
+      "credit_review": "图注中未发现单独排除条款；保留原图整张，不抽取面板。"
+    }
+  ]
+}

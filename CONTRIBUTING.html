@@ -1,0 +1,10 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>如何添加论文和图 · RL Figure Atlas</title><link rel="stylesheet" href="assets/style.css"><style>.reading{max-width:1000px;padding:45px 5%;margin:auto}.reading h1{font:34px/1.5 var(--serif);margin:30px 0}.reading h2{font-size:22px;font-weight:500;margin:44px 0 17px}.reading p{line-height:1.95;margin:18px 0}.reading table{border-collapse:collapse;display:block;overflow:auto;font-size:12px;line-height:1.8}.reading td,.reading th{border:1px solid var(--line);padding:12px 15px;text-align:left;min-width:110px}.reading th{background:#e8eddf}.reading img{max-width:100%;height:auto;background:white}.reading>p:first-child{font-size:12px}.reading code{background:#e8eddf;padding:2px 5px}.reading li{margin:10px 0}.reading pre code{background:none;padding:0}</style></head><body><article class="reading"><p><a href="index.html">← 返回图示参考库</a></p><h1>如何添加论文和图</h1>
+<ol>
+<li>先核对正式期刊记录、DOI、出版时间、纠错或撤稿提示。预印本与顶会独立列为补充，不标作一区期刊。</li>
+<li>记录分区体系、年份、类别与证据；JCR Q1、中科院一区、SJR Q1 不混用。缺少直接证据时明确保留核验状态。</li>
+<li>找到明确图号与原始图页，填写这张图要回答的问题、可迁移的画法和解释边界。</li>
+<li>检查文章许可、所选图注以及独立第三方署名。只有 CC BY 4.0 且没有识别到排除条款的图才由当前收集器下载；其他情况仅链接来源。</li>
+<li>在 <code>scripts/curation.py</code> 添加中文笔记，在 <code>scripts/inspect_sources.py</code> 添加正式来源。运行收集器和校验器，人工看清原图和中文笔记再提交。</li>
+</ol>
+<p>不要上传用户私人文稿、付费下载的整篇论文、账号信息或未经核验的图像。<code>evidence/</code> 记录短许可证据和校验值，<code>.cache/</code> 中的原网页与分区 PDF 不随仓库发布。</p>
+<footer><span>RL FIGURE ATLAS</span><a href="RIGHTS.html">图片与原创内容许可</a></footer></article></body></html>

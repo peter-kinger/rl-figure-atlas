@@ -1,0 +1,31 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Deep-reinforcement-learning-based water diversion strategy · RL Figure Atlas</title><link rel="stylesheet" href="../assets/style.css"><style>.reading{max-width:1000px;padding:45px 5%;margin:auto}.reading h1{font:34px/1.5 var(--serif);margin:30px 0}.reading h2{font-size:22px;font-weight:500;margin:44px 0 17px}.reading p{line-height:1.95;margin:18px 0}.reading table{border-collapse:collapse;display:block;overflow:auto;font-size:12px;line-height:1.8}.reading td,.reading th{border:1px solid var(--line);padding:12px 15px;text-align:left;min-width:110px}.reading th{background:#e8eddf}.reading img{max-width:100%;height:auto;background:white}.reading>p:first-child{font-size:12px}.reading code{background:#e8eddf;padding:2px 5px}.reading li{margin:10px 0}.reading pre code{background:none;padding:0}</style></head><body><article class="reading"><p><a href="../index.html">← 返回图示参考库</a></p><h1>Deep-reinforcement-learning-based water diversion strategy</h1>
+<p>Environmental Science and Ecotechnology · 2024 · 优先阅读</p>
+<p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10405199/">论文原文</a> · <a href="https://doi.org/10.1016/j.ese.2023.100298">DOI</a></p>
+<p>过程模型加 DDPG、SHAP、权重敏感性与环境参数不确定性；仅链接原图。</p>
+<p>许可：CC BY-NC-ND 4.0。分区详见 <a href="../docs/selection.html">筛选依据</a>，未宣称已核验中科院一区。</p>
+<h2>Fig. 1 过程模型与强化学习耦合</h2>
+<p><strong>用途：</strong> MDP 框架。</p>
+<p><strong>画法借鉴：</strong> 借鉴物理过程环境和学习算法的双层组织，初始化与交互用不同线型。</p>
+<p><strong>解释边界：</strong> 原文为 CC BY-NC-ND；本库仅提供来源入口。</p>
+<p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10405199/figure/fig1/">原始图页</a></p>
+<h2>Fig. 6 水质与调水量同时评价</h2>
+<p><strong>用途：</strong> 多目标权衡。</p>
+<p><strong>画法借鉴：</strong> 把水质、控制量和总回报分面呈现，检查是否以水量换水质。</p>
+<p><strong>解释边界：</strong> 回报权重变化后，总回报不能直接横向比较。</p>
+<p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10405199/figure/fig6/">原始图页</a></p>
+<h2>Fig. 7 SHAP 解释调控动作</h2>
+<p><strong>用途：</strong> 策略解释。</p>
+<p><strong>画法借鉴：</strong> 把全局贡献与变量相互作用分开，注明解释对象是动作还是价值。</p>
+<p><strong>解释边界：</strong> SHAP 解释模型关联，不证明物理因果作用。</p>
+<p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10405199/figure/fig7/">原始图页</a></p>
+<h2>Fig. 8 奖励与时间尺度敏感性</h2>
+<p><strong>用途：</strong> 敏感性与消融。</p>
+<p><strong>画法借鉴：</strong> 将目标权重、控制间隔与优化超参数分开讨论。</p>
+<p><strong>解释边界：</strong> 控制间隔改变时，时间累计奖励和折扣需要一致。</p>
+<p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10405199/figure/fig8/">原始图页</a></p>
+<h2>Fig. 9 过程模型不确定性压力测试</h2>
+<p><strong>用途：</strong> 稳健性与风险。</p>
+<p><strong>画法借鉴：</strong> 同一策略在多组环境参数下测试，比较水质和决策响应。</p>
+<p><strong>解释边界：</strong> 模拟器参数扰动不是对未来气候全部不确定性的覆盖。</p>
+<p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10405199/figure/fig9/">原始图页</a></p>
+<footer><span>RL FIGURE ATLAS</span><a href="../RIGHTS.html">图片与原创内容许可</a></footer></article></body></html>

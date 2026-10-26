@@ -1,0 +1,26 @@
+{
+  "paper_id": "dreamer",
+  "source_url": "https://www.nature.com/articles/s41586-025-08744-2",
+  "retrieved_at": "2026-10-26",
+  "source_sha256": "2e7c15e24badb1e8e4714c4a82e2b3c7f7714665bc8210b17603cbd4e7ee08ae",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_evidence": "Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you",
+  "figures": [
+    {
+      "id": "dreamer-fig1",
+      "source_url": "https://www.nature.com/articles/s41586-025-08744-2/figures/1",
+      "credit_review": "图注中未发现单独排除条款；保留原图整张，不抽取面板。"
+    },
+    {
+      "id": "dreamer-fig4",
+      "source_url": "https://www.nature.com/articles/s41586-025-08744-2/figures/4",
+      "credit_review": "图注中未发现单独排除条款；保留原图整张，不抽取面板。"
+    },
+    {
+      "id": "dreamer-fig6",
+      "source_url": "https://www.nature.com/articles/s41586-025-08744-2/figures/6",
+      "credit_review": "图注中未发现单独排除条款；保留原图整张，不抽取面板。"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "paper_id": "quantum",
+  "source_url": "https://www.nature.com/articles/s41586-026-10759-2",
+  "retrieved_at": "2026-10-26",
+  "source_sha256": "5f2c4b7683f032cc4c2970a34a8529a6a83fd12d3e2bd443e5694fcc74ce30bb",
+  "license": "CC BY-NC-ND 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+  "license_evidence": "Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. ",
+  "figures": [
+    {
+      "id": "quantum-fig1",
+      "source_url": "https://www.nature.com/articles/s41586-026-10759-2/figures/1",
+      "credit_review": "图注中未发现单独排除条款；保留原图整张，不抽取面板。"
+    },
+    {
+      "id": "quantum-fig4",
+      "source_url": "https://www.nature.com/articles/s41586-026-10759-2/figures/4",
+      "credit_review": "图注中未发现单独排除条款；保留原图整张，不抽取面板。"
+    }
+  ]
+}

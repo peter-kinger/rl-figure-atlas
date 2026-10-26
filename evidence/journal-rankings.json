@@ -1,0 +1,91 @@
+{
+  "retrieved_at": "2026-10-26",
+  "source_pdf_sha256": "a78e6da4e2c369a59c05ee12fcd627c21d9f93d8ccabc662757f4e798b0ccb56",
+  "limitations": "公开汇编为二次证据，不冒充 Clarivate 官方实时查询；2025 为文件标注年份，不推断为 2025 年度影响因子。未核验中科院一区。",
+  "journals": [
+    {
+      "journal": "Nature",
+      "system": "2025 JCR-labelled public compilation",
+      "quartile": "Q1",
+      "source_type": "secondary compilation hosted by University of KwaZulu-Natal; not direct Clarivate access",
+      "source_url": "https://research.ukzn.ac.za/wp-content/uploads/2026/05/JCR-Impact-Factor-2025.pdf",
+      "pdf_page": 1,
+      "exact_row": "28 NATURE NATURE PORTFOLIO 0028-0836 48.5 Q1",
+      "verified_at": "2026-10-26",
+      "cas_status": "未核验",
+      "subject_category": "汇编没有列出具体学科，不推断全部类别均为 Q1"
+    },
+    {
+      "journal": "Nature Sustainability",
+      "system": "2025 JCR-labelled public compilation",
+      "quartile": "Q1",
+      "source_type": "secondary compilation hosted by University of KwaZulu-Natal; not direct Clarivate access",
+      "source_url": "https://research.ukzn.ac.za/wp-content/uploads/2026/05/JCR-Impact-Factor-2025.pdf",
+      "pdf_page": 3,
+      "exact_row": "90 Nature Sustainability NATURE PORTFOLIO 2398-9629 27.1 Q1",
+      "verified_at": "2026-10-26",
+      "cas_status": "未核验",
+      "subject_category": "汇编没有列出具体学科，不推断全部类别均为 Q1"
+    },
+    {
+      "journal": "Nature Machine Intelligence",
+      "system": "2025 JCR-labelled public compilation",
+      "quartile": "Q1",
+      "source_type": "secondary compilation hosted by University of KwaZulu-Natal; not direct Clarivate access",
+      "source_url": "https://research.ukzn.ac.za/wp-content/uploads/2026/05/JCR-Impact-Factor-2025.pdf",
+      "pdf_page": 4,
+      "exact_row": "120 Nature Machine Intelligence NATURE PORTFOLIO N/A 23.9 Q1",
+      "verified_at": "2026-10-26",
+      "cas_status": "未核验",
+      "subject_category": "汇编没有列出具体学科，不推断全部类别均为 Q1"
+    },
+    {
+      "journal": "Nature Computational Science",
+      "system": "2025 JCR-labelled public compilation",
+      "quartile": "Q1",
+      "source_type": "secondary compilation hosted by University of KwaZulu-Natal; not direct Clarivate access",
+      "source_url": "https://research.ukzn.ac.za/wp-content/uploads/2026/05/JCR-Impact-Factor-2025.pdf",
+      "pdf_page": 6,
+      "exact_row": "185 Nature Computational Science SPRINGERNATURE N/A 18.3 Q1",
+      "verified_at": "2026-10-26",
+      "cas_status": "未核验",
+      "subject_category": "汇编没有列出具体学科，不推断全部类别均为 Q1"
+    },
+    {
+      "journal": "Nature Communications",
+      "system": "2025 JCR-labelled public compilation",
+      "quartile": "Q1",
+      "source_type": "secondary compilation hosted by University of KwaZulu-Natal; not direct Clarivate access",
+      "source_url": "https://research.ukzn.ac.za/wp-content/uploads/2026/05/JCR-Impact-Factor-2025.pdf",
+      "pdf_page": 8,
+      "exact_row": "243 Nature Communications NATURE PORTFOLIO N/A 15.7 Q1",
+      "verified_at": "2026-10-26",
+      "cas_status": "未核验",
+      "subject_category": "汇编没有列出具体学科，不推断全部类别均为 Q1"
+    },
+    {
+      "journal": "Environmental Science and Ecotechnology",
+      "system": "2025 JCR-labelled public compilation",
+      "quartile": "Q1",
+      "source_type": "secondary compilation hosted by University of KwaZulu-Natal; not direct Clarivate access",
+      "source_url": "https://research.ukzn.ac.za/wp-content/uploads/2026/05/JCR-Impact-Factor-2025.pdf",
+      "pdf_page": 9,
+      "exact_row": "288 Environmental Science and Ecotechnology ELSEVIER 2666-4984 14.3 Q1",
+      "verified_at": "2026-10-26",
+      "cas_status": "未核验",
+      "subject_category": "汇编没有列出具体学科，不推断全部类别均为 Q1"
+    },
+    {
+      "journal": "Science Advances",
+      "system": "2025 JCR-labelled public compilation",
+      "quartile": "Q1",
+      "source_type": "secondary compilation hosted by University of KwaZulu-Natal; not direct Clarivate access",
+      "source_url": "https://research.ukzn.ac.za/wp-content/uploads/2026/05/JCR-Impact-Factor-2025.pdf",
+      "pdf_page": 12,
+      "exact_row": "371 Science Advances AMER ASSOC ADVANCEMENT SCIENCE2375-2548 12.5 Q1",
+      "verified_at": "2026-10-26",
+      "cas_status": "未核验",
+      "subject_category": "汇编没有列出具体学科，不推断全部类别均为 Q1"
+    }
+  ]
+}

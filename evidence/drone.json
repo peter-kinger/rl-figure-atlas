@@ -1,0 +1,26 @@
+{
+  "paper_id": "drone",
+  "source_url": "https://www.nature.com/articles/s41586-023-06419-4",
+  "retrieved_at": "2026-10-26",
+  "source_sha256": "4cc733b84d7e8144aed98d8c3786708d501bb2f5b9e0b42c7b43e569ed00c74e",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_evidence": "Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you",
+  "figures": [
+    {
+      "id": "drone-fig2",
+      "source_url": "https://www.nature.com/articles/s41586-023-06419-4/figures/2",
+      "credit_review": "图注中未发现单独排除条款；保留原图整张，不抽取面板。"
+    },
+    {
+      "id": "drone-fig3",
+      "source_url": "https://www.nature.com/articles/s41586-023-06419-4/figures/3",
+      "credit_review": "图注中未发现单独排除条款；保留原图整张，不抽取面板。"
+    },
+    {
+      "id": "drone-fig4",
+      "source_url": "https://www.nature.com/articles/s41586-023-06419-4/figures/4",
+      "credit_review": "图注中未发现单独排除条款；保留原图整张，不抽取面板。"
+    }
+  ]
+}

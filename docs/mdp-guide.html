@@ -1,0 +1,82 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>从研究问题到 MDP 框架图 · RL Figure Atlas</title><link rel="stylesheet" href="../assets/style.css"><style>.reading{max-width:1000px;padding:45px 5%;margin:auto}.reading h1{font:34px/1.5 var(--serif);margin:30px 0}.reading h2{font-size:22px;font-weight:500;margin:44px 0 17px}.reading p{line-height:1.95;margin:18px 0}.reading table{border-collapse:collapse;display:block;overflow:auto;font-size:12px;line-height:1.8}.reading td,.reading th{border:1px solid var(--line);padding:12px 15px;text-align:left;min-width:110px}.reading th{background:#e8eddf}.reading img{max-width:100%;height:auto;background:white}.reading>p:first-child{font-size:12px}.reading code{background:#e8eddf;padding:2px 5px}.reading li{margin:10px 0}.reading pre code{background:none;padding:0}</style></head><body><article class="reading"><p><a href="../index.html">← 返回图示参考库</a></p><h1>从研究问题到 MDP 框架图</h1>
+<p>推荐顺序：先读 <a href="../papers/biodiversity.html">CAPTAIN Fig. 1</a>，再看 <a href="../papers/tokamak.html">托卡马克 Fig. 1</a>；空间决策可补充 <a href="../papers/urban.html">城市规划论文</a>，人地耦合可看 <a href="../papers/economist.html">AI Economist Fig. 1、9</a>。这些工作提供组织思路，各自的实验结论不能直接移植到你的任务。</p>
+<h2>先写清决策问题</h2>
+<p>画图前用一句话填完整：<strong>谁，在什么时间间隔，根据哪些可用信息，选择什么动作，改变哪个过程，以什么长期指标判断好坏，并遵守哪些约束。</strong></p>
+<p>以流域调控为概念示例：管理者每天依据监测与预测信息选择放水量，环境按水动力与水质过程变化，在满足水位、生态流量等限制的同时权衡供水、能耗与水环境效益。这是建模示例，不是任何论文已验证的配置。</p>
+<table>
+<thead>
+<tr>
+<th>元素</th>
+<th>必须写清</th>
+<th>图中位置</th>
+<th>常见问题</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>决策者 Agent</td>
+<td>一个管理者，还是多个有不同目标的主体</td>
+<td>策略模块</td>
+<td>把环境中所有实体都叫 agent</td>
+</tr>
+<tr>
+<td>状态 sₜ</td>
+<td>足以刻画转移的信息；是否包含季节、蓄量、需求等</td>
+<td>环境内部或状态接口</td>
+<td>没有解释 Markov 假设</td>
+</tr>
+<tr>
+<td>观测 oₜ</td>
+<td>实际可获得的监测、预测和历史</td>
+<td>环境到策略的箭头</td>
+<td>把模拟器隐变量当作实测输入</td>
+</tr>
+<tr>
+<td>动作 aₜ</td>
+<td>含单位、上下界、离散或连续、执行频率</td>
+<td>策略到环境的箭头</td>
+<td>只写“最优决策”</td>
+</tr>
+<tr>
+<td>转移 P</td>
+<td>过程模型、仿真器、数据模型及外源驱动</td>
+<td>环境模块</td>
+<td>将策略网络画成物理转移</td>
+</tr>
+<tr>
+<td>奖励 rₜ₊₁</td>
+<td>动作后如何计算、量纲与权重</td>
+<td>环境回传学习器</td>
+<td>只给总公式，缺少物理意义</td>
+</tr>
+<tr>
+<td>约束 c / 可行域</td>
+<td>硬约束、概率约束或软惩罚</td>
+<td>动作执行前或独立评估支路</td>
+<td>将惩罚项当作安全保证</td>
+</tr>
+<tr>
+<td>时序与终止</td>
+<td>决策间隔、控制期限、失败终止、折扣</td>
+<td>时间轴或图注</td>
+<td>不同时间尺度仍直接比较折扣</td>
+</tr>
+</tbody></table>
+<h2>选择正确的框架</h2>
+<p>能获得足够状态时，可用 MDP：<code>sₜ → πθ → aₜ → P → (sₜ₊₁, rₜ₊₁)</code>。奖励写成 rₜ 或 rₜ₊₁ 都有文献惯例，但全文必须保持一致。</p>
+<p>真实状态不可完整观测时，用 POMDP 思路：环境状态经过观测通道产生 oₜ，策略使用历史、记忆或信念 bₜ。不要仅因用了神经网络，就认为部分可观测问题已经解决。</p>
+<p>存在不能随意交换的安全条件时，将约束与奖励分开：最大化 Jᴿ，同时满足 Jᶜ ≤ d；如果使用动作掩码或安全层，画出候选动作到执行动作的转换。违反安全条件的频率与严重度需独立报告。</p>
+<p>多个利益主体时，先确定合作、竞争还是混合关系。各主体 i 的观测 oₜⁱ、动作 aₜⁱ、奖励 rₜⁱ 和通信边界都要明确。集中训练分散执行 CTDE 只是可选方法之一；“中央规划者”与“集中 critic”是不同概念。</p>
+<p>制度或规划动作比操作动作慢时，可用双层或分层框架，但要分别定义更新周期与目标。规划者的社会目标不一定是个体效用之和。</p>
+<h2>建议绘制为四个面板</h2>
+<p><strong>a 现实问题。</strong> 研究区、过程、参与者、可控制量和外源驱动。地图承载空间关系；简短说明研究要改善的指标。</p>
+<p><strong>b 决策形式化。</strong> 列出状态或观测、动作、奖励、约束、步长与终止条件；让读者能对应到现实问题。</p>
+<p><strong>c 学习过程。</strong> 策略、价值网络、经验库、更新支路和过程模拟器。只显示实际使用的组件：PPO 不应凭空加 DQN 的经验回放；model-free 方法不应添加并不存在的学习动态模型。</p>
+<p><strong>d 评估与部署。</strong> 留出年份、事件或区域、传统控制与优化基线、物理效果、安全性、泛化和成本。若真实部署尚未完成，写“仿真评估”，不用真实落地的图标暗示已经部署。</p>
+<p>图中建议：绿色表示策略和动作，蓝色表示观测和数据，赭色表示目标或风险；实线表示运行交互，虚线表示训练更新。颜色也要配合线型与文字，不能只靠色觉区分。</p>
+<h2>这篇文稿可以发展成什么图</h2>
+<p>结合用户提供的地球系统强化学习综述，可先做一张 <strong>过程—决策—治理—评估</strong> 总图：地球系统过程放在底层，监测与状态估计放中间，个体与治理策略分成不同决策层，外部接情景驱动和多目标评估。该建议来自对文稿主题的理解，是本库的原创设计建议。</p>
+<p>不建议在同一幅总图里堆满所有算法名称。先让读者看清“信息从哪里来、动作改变什么、结果怎样回到下一次决策”，再用局部面板解释 PPO、DDPG、图网络或世界模型。</p>
+<h2>可编辑素材</h2>
+<p><a href="../templates/01-mdp-loop.svg">MDP 闭环</a> · <a href="../templates/02-pomdp-observation.svg">POMDP</a> · <a href="../templates/03-cmdp-safety.svg">安全约束</a> · <a href="../templates/04-marl-ctde.svg">多智能体 CTDE</a> · <a href="../templates/05-training-deployment.svg">训练部署</a> · <a href="../templates/06-world-model.svg">世界模型</a> · <a href="../templates/07-coupled-governance.svg">人地耦合治理</a> · <a href="../templates/08-hierarchical-timescales.svg">分层时标</a>。</p>
+<p>这些模板为原创矢量示意图，不含论文结果或虚构实验数据。PowerPoint 支持插入 SVG；具体拆分编辑能力取决于软件版本，也可用 Inkscape 或 Illustrator 编辑文本与形状。</p>
+<footer><span>RL FIGURE ATLAS</span><a href="../RIGHTS.html">图片与原创内容许可</a></footer></article></body></html>
